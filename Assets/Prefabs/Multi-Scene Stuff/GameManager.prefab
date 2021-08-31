@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &392860386663132487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 392860386663132481}
+  - component: {fileID: 392860386663132480}
+  - component: {fileID: -4650583431328164132}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &392860386663132481
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392860386663132487}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &392860386663132480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392860386663132487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b500c3be8204ea947bbbacd1351a9766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentFloor: 1
+  maxTotalOpenRooms: 2
+  maxOpenRooms: 2
+  startingHearts: 3
+  isPlayerDead: 0
+  rooms: []
+  spawnRoom: {fileID: 0}
+  bossRoom: {fileID: 0}
+  firstRoom: {fileID: 0}
+  playerObject: {fileID: 0}
+  cameraObject: {fileID: 0}
+  newItemPopup: {fileID: 0}
+  EnemyPrefabs:
+  - {fileID: 718188595298096459, guid: c4c560ce448e0a348a9e4837c911117b, type: 3}
+  - {fileID: 5697700465723575108, guid: 6f9eb69d90c226843a1fb618b2fd575b, type: 3}
+  - {fileID: 6849349093134995882, guid: b6f9bc40d6dab584a953eb6a03f02bec, type: 3}
+  BossPrefabs:
+  - {fileID: 1996918991639385890, guid: 5c1619d5dc9949e46a658ed3102a5655, type: 3}
+  - {fileID: 5500158050387829037, guid: 52d207a75088a2a40bbd08974fd158f6, type: 3}
+  EnemyItemRewards:
+  - {fileID: 4915476300306178209, guid: e1a0894166ebed24a92d70023f6e36bd, type: 3}
+  - {fileID: 4915476300306178209, guid: e1a0894166ebed24a92d70023f6e36bd, type: 3}
+  - {fileID: 4915476300306178209, guid: e1a0894166ebed24a92d70023f6e36bd, type: 3}
+  - {fileID: 5335197941285706313, guid: b0f6a540edf484f458f84a72e31a8e64, type: 3}
+  BossItemRewards:
+  - {fileID: 7777730692802547010, guid: 0f539ca59a0cb57498720ac3897a4d7f, type: 3}
+  - {fileID: 4410476441958325405, guid: 795dfafdc03f2894fb2b1bc8339baf5d, type: 3}
+  - {fileID: 2766653156900447535, guid: a8b6ee47f6e192446affb01689b134f3, type: 3}
+  - {fileID: 4371824562147426729, guid: 4f5d2c35ad181ec46af539ea25e12705, type: 3}
+  - {fileID: 7850509945689240260, guid: bb213a76ab0643a42b4e16bc39401f4b, type: 3}
+  - {fileID: 116674492935524944, guid: c29971f0412fbed469271abd4fa3c51d, type: 3}
+  - {fileID: 4410476441958325405, guid: 795dfafdc03f2894fb2b1bc8339baf5d, type: 3}
+  - {fileID: 4410476441958325405, guid: 795dfafdc03f2894fb2b1bc8339baf5d, type: 3}
+  - {fileID: 7828522315735642980, guid: 764d00122987bf74faf61b268b7a8e5d, type: 3}
+  trapDoorPrefab: {fileID: 3056512457114641242, guid: 149630687805cb846a6a5d01ce6dfefe,
+    type: 3}
+  hurtParticles: {fileID: 8284672827653438268, guid: 98e3d2eca7bbf1340aae51bbac4ea005,
+    type: 3}
+  collectedItems: []
+  shotSounds:
+  - {fileID: 8300000, guid: a83e1c8b5096edf44b45cff7122f78be, type: 3}
+  - {fileID: 8300000, guid: aab5b5c8e16dcb843a688e5fd6e8d535, type: 3}
+  - {fileID: 8300000, guid: 3cee14474d059aa40931d1f058187ebe, type: 3}
+  playerDeathSound: {fileID: 8300000, guid: 2e31701f5bb31864cab9b0874a5bd3c8, type: 3}
+  skeletonShotSounds:
+  - {fileID: 8300000, guid: 7421ec2e534e306428735625b6c3d2b2, type: 3}
+  - {fileID: 8300000, guid: a636cbee2c97c2e48be2c8a972931f40, type: 3}
+  - {fileID: 8300000, guid: 620e08090c8d3034c803477e13e0ce5a, type: 3}
+  eyeShotSounds:
+  - {fileID: 8300000, guid: bf14dccf6f10d7f4994a0fc67b577c98, type: 3}
+  - {fileID: 8300000, guid: 38d52e017d999d245884eebddc51fc16, type: 3}
+  - {fileID: 8300000, guid: eb9909fd05d22fc44bf1ecf2be89a3f7, type: 3}
+  slimeHurtSounds:
+  - {fileID: 8300000, guid: bd6980e1adf010744a6af23804eab1eb, type: 3}
+  - {fileID: 8300000, guid: ca8028d980c7152418ce0990d08dc57e, type: 3}
+  - {fileID: 8300000, guid: 2f2a93937df956044890e07b4e87e7c1, type: 3}
+--- !u!114 &-4650583431328164132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392860386663132487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e7e4782b6bb6149b7db60c94243d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

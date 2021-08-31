@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &939865142656591397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 939865142656591419}
+  - component: {fileID: 939865142656591396}
+  m_Layer: 0
+  m_Name: RoomTemplates
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &939865142656591419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939865142656591397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &939865142656591396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939865142656591397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d3f123d86f39f49b959fdab1f9fff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topDoorRooms:
+  - {fileID: 1179192902589067730, guid: df13d4736bdc3124aa853affacffddc7, type: 3}
+  - {fileID: 7609185675065033221, guid: 3e042e31024a9f249a15a8dd5facdbfe, type: 3}
+  - {fileID: 923297504209737607, guid: 5c9efde05e89afc4ea0bafc622dc8248, type: 3}
+  - {fileID: 6872516821205251773, guid: 6175d9c59b5fd11429baabf7cea066cf, type: 3}
+  rightDoorRooms:
+  - {fileID: 4068531812605410055, guid: 0017719f9cf8cd244b4bb0b1df08a374, type: 3}
+  - {fileID: 2897800358783543452, guid: 6dec579dd88161d4189d789289a66707, type: 3}
+  - {fileID: 4660717256470585080, guid: 9a43925a52c18414d83aa72de151cc64, type: 3}
+  - {fileID: 4044545042430288529, guid: fb7a1f8abde73ce46bc95732312422f5, type: 3}
+  downDoorRooms:
+  - {fileID: 8702730622940323298, guid: 0f5ec77ee74794240add09acb63c51f0, type: 3}
+  - {fileID: 8906516230294816907, guid: cc0d2c7bea1a3c64a8513f4282fa1ae8, type: 3}
+  - {fileID: 4660717256470585080, guid: 9a43925a52c18414d83aa72de151cc64, type: 3}
+  - {fileID: 7609185675065033221, guid: 3e042e31024a9f249a15a8dd5facdbfe, type: 3}
+  leftDoorRooms:
+  - {fileID: 6561826954721494594, guid: caf7e49162cbca14a8a554e72812e330, type: 3}
+  - {fileID: 8906516230294816907, guid: cc0d2c7bea1a3c64a8513f4282fa1ae8, type: 3}
+  - {fileID: 4068531812605410055, guid: 0017719f9cf8cd244b4bb0b1df08a374, type: 3}
+  - {fileID: 923297504209737607, guid: 5c9efde05e89afc4ea0bafc622dc8248, type: 3}
+  closedRoom: {fileID: 6839017517526676038, guid: 2ba0eba56ce5a76488b18a9f27d1d23d,
+    type: 3}
+  fourWayRoom: {fileID: 4300675130804119081, guid: 0469a9d00a08e5747b0ad96647571219,
+    type: 3}
+  roomDestroyer: {fileID: 6144686054988637904, guid: cb0117af9b063a04da1890495b1834e3,
+    type: 3}
+  closingTopRoom: {fileID: 1179192902589067730, guid: df13d4736bdc3124aa853affacffddc7,
+    type: 3}
+  closingBottomRoom: {fileID: 8702730622940323298, guid: 0f5ec77ee74794240add09acb63c51f0,
+    type: 3}
+  closingLeftRoom: {fileID: 6561826954721494594, guid: caf7e49162cbca14a8a554e72812e330,
+    type: 3}
+  closingRightRoom: {fileID: 2897800358783543452, guid: 6dec579dd88161d4189d789289a66707,
+    type: 3}
+  totalWaitTime: 2
+  bossMarker: {fileID: 5061798056796605943, guid: a74f5c9bad823a04fa785effff2b6978,
+    type: 3}
+  tempRoomList: []
